@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我的分享</title>
+	<link type="text/css" rel="stylesheet" href="../nicole.css">
+</head>
+
+<body>
+	<h1 id="sharing_top">分享我的热爱</h1>
+	<p>
+	<img src = "../images/sharing.jpg"><br>
+	啊哦，主人很懒，什么都还没写呢~ =￣ω￣= ~
+	</p>
+
+	<a href="#sharing_top">back to top</a><br>
+	<a href="../index.html#top">back to home</a>
+</body>
+</html>
