@@ -96,7 +96,7 @@ aside>.more>li:hover>p{
   visibility: visible; 
 }
 
-main{
+.main{
   flex-grow: 1;
   background: #ccffff;
 }

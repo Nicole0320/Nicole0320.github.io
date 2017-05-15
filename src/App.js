@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './../public/iconfont/iconfont.css';
+import MainPage from './MainPage.js';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      currentPage: 'welcome'
+    }
+  }
+
   render() {
     return (
       <div className="App">
@@ -13,19 +20,29 @@ class App extends Component {
           <h2>前端开发工程师</h2>
           <ul id="navigator">
             <li>
-              <button>个人信息</button>
+              <button onClick={this.switchMainPage.bind(this, 'myInfo')}
+                className={this.state.currentPage === 'myInfo' ? 'clicked' : ''}
+              >个人信息</button>
             </li>
             <li>
-              <button>项目作品</button>
+              <button onClick={this.switchMainPage.bind(this, 'project')}
+                className={this.state.currentPage === 'project' ? 'clicked' : ''}
+              >项目作品</button>
             </li>
             <li>
-              <button>个人技能</button>
+              <button onClick={this.switchMainPage.bind(this, 'skills')}
+                className={this.state.currentPage === 'skills' ? 'clicked' : ''}
+              >个人技能</button>
             </li>
             <li>
-              <button>教育经历</button>
+              <button onClick={this.switchMainPage.bind(this, 'education')}
+                className={this.state.currentPage === 'education' ? 'clicked' : ''}
+              >教育经历</button>
             </li>
             <li>
-              <button>工作经历</button>
+              <button onClick={this.switchMainPage.bind(this, 'workExp')}
+                className={this.state.currentPage === 'workExp' ? 'clicked' : ''}
+              >工作经历</button>
             </li>
           </ul>
           <ul className="more">
@@ -43,11 +60,15 @@ class App extends Component {
             </li>
           </ul>
         </aside>
-        <main>
-
-        </main>
+        <MainPage className='main' props={this.state.currentPage}></MainPage>
       </div>
     );
+  }
+
+  switchMainPage(pageName, e){
+    this.setState({
+      currentPage: pageName
+    });
   }
 }
 
