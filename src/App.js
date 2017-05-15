@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './../public/iconfont/iconfont.css';
 
 class App extends Component {
   render() {
@@ -27,19 +28,24 @@ class App extends Component {
               <button>工作经历</button>
             </li>
           </ul>
-          <ul>
+          <ul className="more">
             <li>
-              <a href="#">查看简版简历</a>
+              <a href="#" className="iconfont icon-jianli" target="_blank"></a>
+              <p>在新窗口查看简版简历</p>
             </li>
             <li>
-              <a href="">下载PDF版</a>
+              <a href="#" className="iconfont icon-pdf" target="_blank"></a>
+              <p>下载PDF版简历</p>
             </li>
             <li>
-              <a href="">查看源码</a>
+              <a href="#" className="iconfont icon-daima"  target="_blank"></a>
+              <p>查看本站源代码</p>
             </li>
           </ul>
         </aside>
-        <main></main>
+        <main>
+
+        </main>
       </div>
     );
   }
