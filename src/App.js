@@ -6,13 +6,40 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <aside>
+          <h1>狄璠</h1>
+          <h3>Di Fan</h3>
+          <h2>前端开发工程师</h2>
+          <ul id="navigator">
+            <li>
+              <button>个人信息</button>
+            </li>
+            <li>
+              <button>项目作品</button>
+            </li>
+            <li>
+              <button>个人技能</button>
+            </li>
+            <li>
+              <button>教育经历</button>
+            </li>
+            <li>
+              <button>工作经历</button>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">查看简版简历</a>
+            </li>
+            <li>
+              <a href="">下载PDF版</a>
+            </li>
+            <li>
+              <a href="">查看源码</a>
+            </li>
+          </ul>
+        </aside>
+        <main></main>
       </div>
     );
   }
