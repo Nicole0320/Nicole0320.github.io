@@ -60,7 +60,7 @@ class App extends Component {
             </li>
           </ul>
         </aside>
-        <MainPage className='main' props={this.state.currentPage}></MainPage>
+        <MainPage className='main' currentPage={this.state.currentPage}></MainPage>
       </div>
     );
   }
