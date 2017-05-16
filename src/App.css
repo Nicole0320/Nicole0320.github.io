@@ -2,11 +2,12 @@
   text-align: center;
   color: #fff;
   display: flex;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+}
+
+@media(min-height: 698px){
+  .App{
+    height: 100vh;
+  }
 }
 
 *{margin: 0; padding: 0;}
@@ -76,11 +77,13 @@ aside>.more>li>a{
 aside>.more>li>p{
   visibility: hidden;
   position: absolute;
-  top: 110%;
+  top: -145%;
   left: 0;
   border:1px solid #ccffff;
   color: #ccffff;
   border-radius: 3px;
+  padding: 2px 5px 5px;
+  background-color: #009999;
 }
 
 aside>.more>li>p::before{
@@ -90,10 +93,10 @@ aside>.more>li>p::before{
   display: block;
   position: absolute;
   border: inherit;
-  border-bottom: none;
-  border-right: none;
+  border-top: none;
+  border-left: none;
   border-radius: none;
-  top: -5px;
+  top: 92%;
   left: 40%;
   transform: rotate(45deg);
   background-color: #009999;
