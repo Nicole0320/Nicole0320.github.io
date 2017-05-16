@@ -89,9 +89,6 @@ class App extends Component {
         showMenu: true
       });
     }
-    console.log(e.target.parentElement);
-    console.log(this);
-    
   }
 }
 
