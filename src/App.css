@@ -2,6 +2,8 @@
   text-align: center;
   color: #fff;
   display: flex;
+  flex-direction: row;
+  min-width: 300px;
 }
 
 @media(min-height: 698px){
@@ -23,6 +25,7 @@ aside{
   flex-direction: column;
   justify-content: center;
   color: #eeffff;
+  position: relative;
 }
 
 aside>h1, aside>h2, aside>h3{
@@ -104,6 +107,35 @@ aside>.more>li>p::before{
 
 aside>.more>li:hover>p{
   visibility: visible; 
+}
+
+.App>aside>.menu{
+  font-size: 2em;
+  padding: 5px 8px;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+}
+
+/****当屏幕过窄时隐藏左侧边栏****/
+@media(max-width: 700px){
+  .App>aside{
+    margin-left: -300px;
+    padding: 0;
+  }
+
+  .App>aside>.menu{
+    display: block;
+  }
+
+  .App>.main{
+    min-height: 100vh;
+  }
+}
+
+.App>aside.showMenu{
+  margin-left: 0;
 }
 
 .main{

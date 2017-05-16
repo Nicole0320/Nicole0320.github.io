@@ -12,7 +12,6 @@ export default class MainPage extends Component{
     }
 
     render(){
-        console.log(this.props);
         switch(this.props.currentPage){
             case 'myInfo':
                 return <Information />;

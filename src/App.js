@@ -7,7 +7,8 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      currentPage: 'welcome'
+      currentPage: 'welcome',
+      showMenu: true
     }
   }
 
@@ -59,6 +60,9 @@ class App extends Component {
               <p>查看本站源代码</p>
             </li>
           </ul>
+          <div className="iconfont icon-caidan-copy menu"
+            onClick={this.showMenu.bind(this)}
+          ></div>
         </aside>
         <MainPage className='main' currentPage={this.state.currentPage}></MainPage>
       </div>
@@ -69,6 +73,25 @@ class App extends Component {
     this.setState({
       currentPage: pageName
     });
+  }
+
+//点击菜单按钮隐藏或展示左侧边栏
+  showMenu(e){
+    if(this.state.showMenu){
+      e.target.parentElement.setAttribute('class', 'showMenu');
+      this.setState({
+        showMenu: false
+      });
+    }
+    else{
+      e.target.parentElement.removeAttribute('class', 'showMenu');
+      this.setState({
+        showMenu: true
+      });
+    }
+    console.log(e.target.parentElement);
+    console.log(this);
+    
   }
 }
 
