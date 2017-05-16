@@ -13,3 +13,7 @@
 .Information>.contact>li{
     margin: 5px 0;
 }
+
+.Information>.contact>li>i{
+    font-size: 1.5em;
+}
