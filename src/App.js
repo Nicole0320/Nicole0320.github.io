@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <aside>
-          <h1>狄璠</h1>
+          <h1 className="title">狄璠</h1>
           <h3>Di Fan</h3>
           <h2>前端开发工程师</h2>
           <ul id="navigator">

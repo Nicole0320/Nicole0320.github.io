@@ -1,0 +1,15 @@
+.contact{
+    text-align: left;
+}
+
+.Information>*{
+    margin: 10px 0;
+}
+
+.Information>h3{
+    font-size: 1.5em;
+}
+
+.Information>.contact>li{
+    margin: 5px 0;
+}

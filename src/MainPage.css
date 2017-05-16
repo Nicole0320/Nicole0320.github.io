@@ -1,0 +1,28 @@
+/*****右侧主页面MainPage中的页面组件通用样式*****/
+.title{
+    text-shadow: 1px 2px #66cccc, 2px 4px #ccffff;
+    font-size: 3.5em;
+    color: #fff;
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+.MainPage{
+    background: #66cccc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.MainPage a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.MainPage a:hover{
+    border-bottom: 1px solid #ccffff;
+}
