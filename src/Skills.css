@@ -1,0 +1,10 @@
+.Skills>.tags{
+    display: flex;
+    font-size: 1.3em;
+    flex-wrap: wrap;
+    max-width: 300px;
+    justify-content: center;
+}
+.Skills>.tags>li{
+    margin: 8px;
+}
