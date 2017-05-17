@@ -22,10 +22,11 @@ export default class MainPage extends Component{
             case 'Exprience':
                 return <Exprience />;
             default:
-                // return(
-                //     <div>Welcome</div>
-                // );
-                return <Exprience />;
+                return(
+                    <div className="MainPage">
+                        <h1 className="title">Welcome !</h1>
+                    </div>
+                );
         }
     }
 }
