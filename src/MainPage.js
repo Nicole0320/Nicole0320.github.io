@@ -27,7 +27,7 @@ export default class MainPage extends Component{
                 // return(
                 //     <div>Welcome</div>
                 // );
-                return <Information />;
+                return <Project />;
         }
     }
 }
