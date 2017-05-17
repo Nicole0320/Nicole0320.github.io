@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Information from './Information.js';
 import Project from './Project.js';
 import Skills from './Skills.js';
-import Education from './Education.js';
+import Exprience from './Exprience.js';
 import WorkExp from './WorkExp.js'
 import './MainPage.css';
 
@@ -19,10 +19,8 @@ export default class MainPage extends Component{
                 return <Project />;
             case 'skills':
                 return <Skills />;
-            case 'education':
-                return <Education />;
-            case 'workExp':
-                return <WorkExp />;
+            case 'Exprience':
+                return <Exprience />;
             default:
                 // return(
                 //     <div>Welcome</div>

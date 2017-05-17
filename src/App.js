@@ -21,11 +21,6 @@ class App extends Component {
           <h2>前端开发工程师</h2>
           <ul id="navigator">
             <li>
-              <button onClick={this.switchMainPage.bind(this, 'myInfo')}
-                className={this.state.currentPage === 'myInfo' ? 'clicked' : ''}
-              >个人信息</button>
-            </li>
-            <li>
               <button onClick={this.switchMainPage.bind(this, 'project')}
                 className={this.state.currentPage === 'project' ? 'clicked' : ''}
               >项目作品</button>
@@ -33,17 +28,17 @@ class App extends Component {
             <li>
               <button onClick={this.switchMainPage.bind(this, 'skills')}
                 className={this.state.currentPage === 'skills' ? 'clicked' : ''}
-              >个人技能</button>
+              >专业技能</button>
             </li>
             <li>
-              <button onClick={this.switchMainPage.bind(this, 'education')}
-                className={this.state.currentPage === 'education' ? 'clicked' : ''}
-              >教育经历</button>
+              <button onClick={this.switchMainPage.bind(this, 'Exprience')}
+                className={this.state.currentPage === 'Exprience' ? 'clicked' : ''}
+              >个人经历</button>
             </li>
             <li>
-              <button onClick={this.switchMainPage.bind(this, 'workExp')}
-                className={this.state.currentPage === 'workExp' ? 'clicked' : ''}
-              >工作经历</button>
+              <button onClick={this.switchMainPage.bind(this, 'myInfo')}
+                className={this.state.currentPage === 'myInfo' ? 'clicked' : ''}
+              >个人信息</button>
             </li>
           </ul>
           <ul className="more">
