@@ -8,7 +8,7 @@ export default class Skills extends Component{
 
     render(){
         return(
-            <div className="MainPage Skills">
+            <div className="Skills">
                 <h1 className="title">专业技能</h1>
                 <ul className="tags">
                     <li>JavaScript</li>

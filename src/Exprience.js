@@ -8,7 +8,7 @@ export default class Exprience extends Component{
 
     render(){
         return(
-            <div className="MainPage Exprience">
+            <div className="Exprience">
                 <h1 className="title">个人经历</h1>
                 <h2>西安电子科技大学 <span className="time">2011-2015</span></h2>
                 <p>软件学院 | 软件工程 | 本科</p>

@@ -8,7 +8,7 @@ export default class Project extends Component{
 
     render(){
         return(
-            <div className="MainPage Project">
+            <div className="Project">
                 <h1 className="title">项目作品</h1>
                 <ul className="projiect-list">
                     <li>

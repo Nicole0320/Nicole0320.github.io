@@ -3,7 +3,6 @@ import Information from './Information.js';
 import Project from './Project.js';
 import Skills from './Skills.js';
 import Exprience from './Exprience.js';
-import WorkExp from './WorkExp.js'
 import './MainPage.css';
 
 export default class MainPage extends Component{
@@ -12,21 +11,29 @@ export default class MainPage extends Component{
     }
 
     render(){
-        switch(this.props.currentPage){
-            case 'myInfo':
-                return <Information />;
-            case 'project':
-                return <Project />;
-            case 'skills':
-                return <Skills />;
-            case 'Exprience':
-                return <Exprience />;
-            default:
-                return(
-                    <div className="MainPage">
-                        <h1 className="title">Welcome !</h1>
-                    </div>
-                );
-        }
+        let page= (function(){
+            switch(this.props.currentPage){
+                case 'myInfo':
+                    return <Information />;
+                case 'project':
+                    return <Project />;
+                case 'skills':
+                    return <Skills />;
+                case 'Exprience':
+                    return <Exprience />;
+                default:
+                    return(
+                        <div>
+                            <h1 className="title">Welcome !</h1>
+                        </div>
+                    );
+            }
+        }.bind(this))();
+
+        return(
+            <div className="MainPage">
+                {page}
+            </div>
+        )
     }
 }

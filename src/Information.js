@@ -8,7 +8,7 @@ export default class Information extends Component{
 
     render(){
         return(
-            <div className="MainPage Information">
+            <div className="Information">
                 <h1 className="title">狄璠</h1>
                 <h3>应聘职位：前端开发工程师</h3>
                 <p>只因兴趣，所以选择；只因热爱，所以为每一像素执着</p>
