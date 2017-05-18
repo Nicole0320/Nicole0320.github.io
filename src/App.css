@@ -87,6 +87,7 @@ aside>.more>li>p{
   border-radius: 3px;
   padding: 2px 5px 5px;
   background-color: #009999;
+  transform: translateY(20%); 
 }
 
 aside>.more>li>p::before{
@@ -107,6 +108,8 @@ aside>.more>li>p::before{
 
 aside>.more>li:hover>p{
   visibility: visible; 
+  transform: translateY(0);
+  transition: all 0.2s;
 }
 
 .App>aside>.menu{
