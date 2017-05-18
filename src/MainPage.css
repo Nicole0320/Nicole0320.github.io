@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     letter-spacing: 1px;
+    padding-bottom: 30px;
 }
 
 .MainPage a{
@@ -26,3 +27,23 @@
 .MainPage a:hover{
     border-bottom: 1px solid #ccffff;
 }
+
+.MainPage>.nextPage{
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    padding: 2px;
+}
+
+/*@media(max-width: 700px){
+  .App>aside{
+    position: fixed;
+    right: 100%;
+    padding: 0px;
+    min-height: 100vh;
+    z-index: 1;
+  }
+}*/

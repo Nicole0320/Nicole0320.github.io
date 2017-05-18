@@ -59,9 +59,17 @@ class App extends Component {
             onClick={this.showMenu.bind(this)}
           ></div>
         </aside>
-        <MainPage className='main' currentPage={this.state.currentPage}></MainPage>
+        <MainPage className='main' currentPage={this.state.currentPage}
+          nextPage={this.getNextPage.bind(this)}
+        ></MainPage>
       </div>
     );
+  }
+
+  getNextPage(newPage){
+    this.setState({
+      currentPage: newPage
+    });
   }
 
   switchMainPage(pageName, e){

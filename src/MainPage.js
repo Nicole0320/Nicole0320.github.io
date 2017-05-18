@@ -33,7 +33,28 @@ export default class MainPage extends Component{
         return(
             <div className="MainPage">
                 {page}
+                <div className="nextPage" 
+                    onClick={this.getNextPage.bind(this)}
+                >下一页</div>
             </div>
         )
+    }
+
+    getNextPage(e){
+        let newPage = (function(){
+            switch(this.props.currentPage){
+                case 'myInfo':
+                    return 'project';
+                case 'project':
+                    return 'skills';
+                case 'skills':
+                    return 'Exprience';
+                case 'Exprience':
+                    return 'myInfo';
+                default:
+                    return 'project';
+            }
+        }.bind(this))();
+        this.props.nextPage(newPage);
     }
 }
