@@ -30,10 +30,13 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.6);
     visibility: hidden;
+    transform: rotateY(90deg);
 }
 
 .projiect-list>li:hover>.cover{
     visibility: visible;
+    transform: rotateY(0);
+    transition: all 0.5s;
 }
 
 .projiect-list>li>.cover>a{
