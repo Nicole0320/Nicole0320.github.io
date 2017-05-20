@@ -51,7 +51,7 @@ class App extends Component {
               <p>下载PDF版简历</p>
             </li>
             <li>
-              <a href="#" className="iconfont icon-daima"  target="_blank"></a>
+              <a href="https://github.com/Nicole0320/Nicole0320.github.io" className="iconfont icon-daima"  target="_blank"></a>
               <p>查看本站源代码</p>
             </li>
           </ul>

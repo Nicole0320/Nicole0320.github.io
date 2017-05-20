@@ -17,7 +17,7 @@ export default class Information extends Component{
                     <li><i className="iconfont icon-mudedi"></i> | 目标城市：杭州、北京、西安</li>
                     <li><i className="iconfont icon-tele"></i> | 联系电话：18740456705</li>
                     <li><i className="iconfont icon-youxiang"></i> | 电子邮箱：difan0320@126.com</li>
-                    <li><i className="iconfont icon-github"></i> | <a href="#" target="_blank">GitHub：点击进入</a></li>
+                    <li><i className="iconfont icon-github"></i> | <a href="https://github.com/Nicole0320" target="_blank">GitHub：点击进入</a></li>
                 </ul>
             </div>
         );
