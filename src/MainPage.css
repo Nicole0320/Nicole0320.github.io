@@ -34,6 +34,13 @@
     right: 40px;
     font-size: 1.5em;
     cursor: pointer;
-    border-bottom: 2px solid #fff;
-    padding: 2px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #66cccc;
+    padding: 2px 5px;
+}
+
+.MainPage>.nextPage:hover{
+    color: #009999;
 }
