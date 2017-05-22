@@ -1,0 +1,158 @@
+*{margin: 0; padding: 0}
+ul,li{list-style: none;}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color: #888;
+}
+
+body{
+    color: #222;
+    background-color: #ccffff;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    margin: 10px auto;
+    background-color: #fff;
+}
+
+#header{
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px 25px 10px 0;
+    /*border-right: 1px solid #aaa;*/
+}
+
+#header>.me>.photo {
+    display: none;
+}
+
+.me>.name {
+	display: block;
+	margin: 20px;
+}
+
+.me>.name>h1{
+    margin: 20px 0;
+}
+
+.me>.name>p{
+    margin: 10px 0;
+    text-align: left;
+}
+
+.side-mode{
+    margin-top: 40px;
+}
+
+.side-mode>.title{
+    margin-bottom: 10px;
+    border-bottom: 3px #aaa double;
+    padding-bottom: 20px;
+}
+
+.side-mode li{
+    text-align: left;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.side-mode li>strong {
+	display: inline-block;
+    font-size: 1.7em;
+    padding-right: 0px;
+    width: 1.3em;
+}
+
+#main{
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#main>h3{
+    padding-left: 8px;
+    margin: 21px 0 2px;
+    font-size: 1.4em;
+}
+
+#main>.experience {
+	margin-left: 40px;
+	line-height: 1.7em;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+#main>.experience:before {
+	display: flex;
+	content: '';
+	height: 95%;
+	border-left: 1px solid #333;
+	position: absolute;
+	left: -30px;
+	top: 1.5em;
+}
+
+.inline-strong{
+    font-size: 0.96em;
+}
+
+#main>.experience>h4 {
+	font-size: 16px;
+	position: relative;
+    margin: 10px 0;
+}
+
+#main>.experience>h4:before{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: 5px solid #333;
+	border-radius: 50%;
+	position: absolute;
+	left: -34.5px;
+	top: 0.5em;
+}
+
+.skills {
+	display: block;
+	line-height: 1.2em;
+}
+
+.skills li {
+	position: relative;
+    padding-left: 40px;
+}
+
+.skills li:before{
+	content: '+';
+	display: block;
+	line-height: 0.8em;
+	padding: 2px 2px;
+	border: 1px solid #888;
+	border-radius: 50%;
+	position: absolute;
+	left: 10px;
+	top: 0.1em;
+}
+
+h4 .date{
+	font-weight: 200;
+	color: #bbb;
+}
+
+.code{
+    display: none;
+}
