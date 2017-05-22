@@ -43,11 +43,11 @@ class App extends Component {
           </ul>
           <ul className="more">
             <li>
-              <a href="#" className="iconfont icon-jianli" target="_blank"></a>
+              <a href="https://nicole0320.github.io/public/simple-resume.html" className="iconfont icon-jianli" target="_blank"></a>
               <p>在新窗口查看简版简历</p>
             </li>
             <li>
-              <a href="#" className="iconfont icon-pdf" target="_blank"></a>
+              <a href="https://nicole0320.github.io/public/resume.pdf" className="iconfont icon-pdf" target="_blank"></a>
               <p>下载PDF版简历</p>
             </li>
             <li>
