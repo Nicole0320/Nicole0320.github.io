@@ -156,3 +156,7 @@ h4 .date{
 .code{
     display: none;
 }
+
+#footer{
+    display: none;
+}
