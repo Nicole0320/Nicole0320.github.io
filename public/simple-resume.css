@@ -87,6 +87,7 @@ body{
 
 .side-mode{
     margin-top: 40px;
+	max-width: 280px;
 }
 
 .side-mode>.title{
@@ -129,14 +130,14 @@ body{
 	margin-bottom: 15px;
 }
 
-#main>.experience:before {
+#main>.experience:before{
 	display: flex;
 	content: '';
-	height: 95%;
+	height: 93%;
 	border-left: 1px solid #333;
 	position: absolute;
 	left: -30px;
-	top: 1.5em;
+	top: 1.1em;
 }
 
 .inline-strong{
@@ -149,7 +150,7 @@ body{
     margin: 10px 0;
 }
 
-#main>.experience>h4:before{
+#main>.experience>h4:before, #main>.experience>li:before{
 	content: '';
 	display: block;
 	width: 0;
@@ -161,26 +162,8 @@ body{
 	top: 0.5em;
 }
 
-.skills {
-	display: block;
-	line-height: 1.2em;
-}
-
-.skills li {
+.experience li {
 	position: relative;
-    padding-left: 40px;
-}
-
-.skills li:before{
-	content: '+';
-	display: block;
-	line-height: 0.8em;
-	padding: 2px 2px;
-	border: 1px solid #fff;
-	border-radius: 50%;
-	position: absolute;
-	left: 10px;
-	top: 0.1em;
 }
 
 h4 .date, h4 .github{
