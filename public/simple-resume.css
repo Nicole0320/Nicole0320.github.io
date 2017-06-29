@@ -109,6 +109,10 @@ body{
     width: 1.3em;
 }
 
+.side-mode.education>*{
+	margin: 10px 0;
+}
+
 #main{
     flex-grow: 1;
     flex-shrink: 1;
