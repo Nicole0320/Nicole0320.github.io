@@ -1,14 +1,14 @@
 /*****右侧主页面MainPage中的页面组件通用样式*****/
 .title{
-    text-shadow: 1px 2px #66cccc, 2px 4px #ccffff;
+    /*text-shadow: 1px 2px #fff, 2px 4px #ccffff;*/
     font-size: 3.5em;
-    color: #fff;
+    color: #61dafb;
     margin: 20px 0;
     letter-spacing: 3px;
 }
 
 .MainPage{
-    background: #66cccc;
+    background: #fff;
     width: 100%;
     height: inherit;
     display: flex;
@@ -25,7 +25,7 @@
 }
 
 .MainPage a:hover{
-    border-bottom: 1px solid #ccffff;
+    border-bottom: 1px solid #2d2d2d;
 }
 
 .MainPage>.nextPage{
@@ -34,13 +34,13 @@
     right: 40px;
     font-size: 1.5em;
     cursor: pointer;
-    border: 2px solid #fff;
+    border: 2px solid #2d2d2d;
     border-radius: 2px;
-    background-color: #fff;
-    color: #66cccc;
+    background-color: #2d2d2d;
+    color: #fff;
     padding: 2px 5px;
 }
 
 .MainPage>.nextPage:hover{
-    color: #009999;
+    opacity: 0.7;
 }

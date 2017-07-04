@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  color: #fff;
+  color: #2d2d2d;
   display: flex;
   flex-direction: row;
   min-width: 300px;
@@ -11,7 +11,7 @@
 ul,li{list-style: none;}
 
 aside{
-  background: #009999;
+  background: #2d2d2d;
   padding: 50px 20px;
   width: 300px;
   flex-grow: 0;
@@ -44,13 +44,16 @@ aside>h1, aside>h2, aside>h3{
 }
 
 #navigator button:hover{
-  box-shadow: 0 0 1px 0px #ccffff;
-  background-color: rgba(255,255,255,0.1);
+  box-shadow: 0 0 1px 0px #61dafb;
+  border: 0.5px solid #61dafb;
+  background-color: rgba(100,100,100,0.1);
+  color: #61dafb;
 }
 
 #navigator button.clicked{
-  box-shadow: inset 0 0 0px 0.5px #ccffff;
-  background-color: rgba(0,0,0,0.1);
+  border: 0.5px solid #61dafb;
+  background-color: rgba(100,100,100,0.1);
+  color: #61dafb;
 }
 
 aside>.more{
@@ -63,7 +66,7 @@ aside>.more>li{
 }
 
 aside>.more>li:hover>a{
-  color: #ccffff;
+  color: #61dafb;
 }
 
 aside>.more>li>a{
@@ -77,11 +80,11 @@ aside>.more>li>p{
   position: absolute;
   top: -145%;
   left: 0;
-  border:1px solid #ccffff;
-  color: #ccffff;
+  border:1px solid #61dafb;
+  color: #61dafb;
   border-radius: 3px;
   padding: 2px 5px 5px;
-  background-color: #009999;
+  background-color: #2d2d2d;
   transform: translateY(20%); 
 }
 
@@ -98,7 +101,7 @@ aside>.more>li>p::before{
   top: 92%;
   left: 40%;
   transform: rotate(45deg);
-  background-color: #009999;
+  background-color: #2d2d2d;
 }
 
 aside>.more>li:hover>p{
@@ -142,3 +145,16 @@ aside>.more>li:hover>p{
 .main{
   flex-grow: 1;
 }
+
+.highlight-pink-background{
+    background: #cc7a6f;
+    color: #fafafa;
+}
+
+.highlight-pink{
+  color: #cc7a6f;
+}
+
+.highlight-blue{}
+
+.highlight-blue-background{}
