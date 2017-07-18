@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import './../public/iconfont/iconfont.css';
+import './iconfont/iconfont.css';
 import MainPage from './MainPage.js';
 
 class App extends Component {

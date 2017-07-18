@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './../public/iconfont/iconfont.css';
+import './iconfont/iconfont.css';
 import './Information.css';
 export default class Information extends Component{
     constructor(props){
