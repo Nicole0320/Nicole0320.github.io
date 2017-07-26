@@ -27,6 +27,7 @@ export default class MainPage extends Component{
                             <h1 className="title">Welcome !</h1>
                         </div>
                     );
+                    // return <Project />; //调试用
             }
         }.bind(this))();
 
