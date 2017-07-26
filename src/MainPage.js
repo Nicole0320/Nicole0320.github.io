@@ -23,7 +23,7 @@ export default class MainPage extends Component{
                     return <Exprience />;
                 default:
                     return(
-                        <div>
+                        <div className="welcome">
                             <h1 className="title">Welcome !</h1>
                         </div>
                     );

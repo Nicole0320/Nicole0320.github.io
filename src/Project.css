@@ -25,7 +25,7 @@
 }
 
 .Project .project-list{
-    margin: 60px 0;
+    margin: 40px 0 80px;
     box-shadow: 2px 3px 4px 1px #ccc, -2px 3px 4px 1px #ccc, 0 0px 4px 2px #eee;
 }
 
