@@ -1,52 +1,7 @@
-.projiect-list{
-    display: flex;
-    max-width: 700px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.projiect-list>li{
-    width: 300px;
-    min-height: 115px;
-    margin: 20px 0;
+.Project{
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 4px;
-    border: 1px solid #ffffff;
-    cursor: default;
-    position: relative;
-}
-
-.projiect-list>li>.cover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    visibility: hidden;
-    transform: rotateY(90deg);
-}
-
-.projiect-list>li:hover>.cover{
-    visibility: visible;
-    transform: rotateY(0);
-    transition: all 0.5s;
-}
-
-.projiect-list>li>.cover>a{
-    display: block;
-    border: 1px solid #fff;
-    padding: 4px 8px;
-    margin: 5px;
-    border-radius: 3px;
-}
-
-.projiect-list>li>.cover>a:hover{
-    background-color: #2d2d2d;
-}
+    align-items: center; 
+    justify-content: flex-start;
+}  
