@@ -169,7 +169,74 @@ h4 .github:hover{
 }
 
 .code{
-    display: none;
+    /* display: none; */
+}
+
+.code{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: #333;
+}
+
+.code li{
+    border: 1px solid #ccc;
+    background: #fff;
+    border-bottom: none;
+    position: relative;
+}
+
+.code li:last-child{
+    border-bottom: 1px solid #ccc;
+}
+
+.code li>p{
+    position: absolute;
+    top: 4px;
+    right: 110%;
+    background: #fff;
+    color: #669999;
+    border: 1px solid #669999;
+    padding: 5px 8px;
+    border-radius: 3px;
+    width: 100px;
+    opacity: 0;
+	visibility: hidden;
+	text-align: center;
+}
+
+.code li>p::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    border-top: 1px solid #669999;
+    border-right: 1px solid #669999;
+    background-color: #fff;
+	transform: rotate(45deg);
+}
+
+.code li:hover{
+    color: #fff;
+    background-color: #669999;
+    border-color: #669999;
+}
+
+.code li:hover>p{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+    transition: all 1s;
+}
+
+.code a{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    color: inherit;
+    padding: 8px 14px;
 }
 
 #footer{
