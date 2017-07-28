@@ -47,7 +47,7 @@ class App extends Component {
               <p>在新窗口查看简版简历</p>
             </li>
             <li>
-              <a href="https://nicole0320.github.io/public/resume.pdf" className="iconfont icon-pdf" target="_blank"></a>
+              <a href="https://nicole0320.github.io/public/简历-狄璠-前端工程师.pdf" className="iconfont icon-pdf" target="_blank"></a>
               <p>下载PDF版简历</p>
             </li>
             <li>
