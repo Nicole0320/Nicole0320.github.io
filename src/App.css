@@ -151,15 +151,18 @@ aside>.more>li:hover>p{
   flex-grow: 1;
 }
 
-.highlight-pink-background{
-    background: #cc7a6f;
-    color: #fafafa;
+.highlight-1{
+    background: #f0f0f0;
+    color: #cc7a6f;
+    padding: 0 3px;
+    border-radius: 3px;
+    margin: 0 2px;
 }
 
-.highlight-pink{
-  color: #cc7a6f;
+.highlight-2{
+  color: #61dafb;
+  background: #eaeaea;
+  padding: 0 3px;
+  border-radius: 3px;
+  margin: 0 2px;
 }
-
-.highlight-blue{}
-
-.highlight-blue-background{}

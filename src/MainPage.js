@@ -22,12 +22,12 @@ export default class MainPage extends Component{
                 case 'Exprience':
                     return <Exprience />;
                 default:
-                    return(
-                        <div className="welcome">
-                            <h1 className="title">Welcome !</h1>
-                        </div>
-                    );
-                    // return <Project />; //调试用
+                    // return(
+                    //     <div className="welcome">
+                    //         <h1 className="title">Welcome !</h1>
+                    //     </div>
+                    // );
+                    return <Skills />; //调试用
             }
         }.bind(this))();
 

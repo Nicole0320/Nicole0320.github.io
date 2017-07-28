@@ -6,14 +6,14 @@
     justify-content: center;
 }  
 
-.Skills>.tags{
+.Skills>.items>li{
     display: flex;
-    font-size: 1.3em;
-    flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 700px;
     justify-content: flex-start;
-}
-.Skills>.tags>li{
-    margin: 8px;
+    margin: 10px 0;
     text-align: left;
+}
+
+.Skills>.items>li>div{
+    padding-right: 8px;
 }
