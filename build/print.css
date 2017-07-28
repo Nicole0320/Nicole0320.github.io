@@ -26,15 +26,12 @@ body{
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     text-align: center;
-    padding: 10px 25px 10px 0;
+    padding: 15px 25px 20px 0;
     /*border-right: 1px solid #aaa;*/
-}
-
-#header>.me>.photo {
-    display: none;
+	max-width: 270px;
 }
 
 .me>.name {
@@ -114,7 +111,7 @@ body{
     margin: 10px 0;
 }
 
-#main>.experience>h4:before{
+#main>.experience>h4:before, #main>.experience>li:before{
 	content: '';
 	display: block;
 	width: 0;
@@ -126,26 +123,12 @@ body{
 	top: 0.5em;
 }
 
-.skills {
-	display: block;
-	line-height: 1.2em;
-}
-
-.skills li {
+.experience li {
 	position: relative;
-    padding-left: 40px;
 }
 
-.skills li:before{
-	content: '+';
-	display: block;
-	line-height: 0.8em;
-	padding: 2px 2px;
-	border: 1px solid #888;
-	border-radius: 50%;
-	position: absolute;
-	left: 10px;
-	top: 0.1em;
+h4 .date, h4 .github{
+	display: none;
 }
 
 h4 .date{
