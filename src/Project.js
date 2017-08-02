@@ -79,7 +79,7 @@ export default class Project extends Component{
                     <li className="project-list">
                         <h2 className="project-title">musicFM - 在线音乐电台</h2>
                         <img src={fmIMG}/>
-                        <p>musicFM 是一个在线音乐播放器，利用开放音乐API，可在线播放音乐，进行播放、暂停、下一曲、调节音量、下载（未完成）、跳转播放进度等操作，还可以将当前音乐添加到本地的“喜爱音乐”列表（未完成），也可切换播放频道，在播放音乐时歌词根据播放进度自动滚动。</p>
+                        <p>musicFM 是一个在线音乐播放器，利用开放音乐API，可在线播放音乐，进行播放、暂停、下一曲、调节音量、跳转播放进度等操作，还可以将当前音乐添加到本地的“喜爱音乐”列表，也可切换播放频道，在播放音乐时歌词根据播放进度自动滚动。</p>
                         <p className="tech">
                             <strong>技术栈：</strong>
                             <ul>
