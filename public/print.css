@@ -19,6 +19,8 @@ body{
     max-width: 900px;
     margin: 10px auto;
     background-color: #fff;
+    padding: 25px;
+    font-size: 15px;
 }
 
 #header{
