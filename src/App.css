@@ -18,7 +18,7 @@ ul,li{list-style: none;}
 aside{
   background: #2d2d2d;
   padding: 50px 20px;
-  width: 300px;
+  width: 280px;
   flex-grow: 0;
   flex-shrink: 0;
   display: flex;
@@ -122,10 +122,11 @@ aside>.more>li:hover>p{
   left: 100%;
   top: 0;
   display: none;
+  color: #2d2d2d;
 }
 
 /****当屏幕过窄时隐藏左侧边栏****/
-@media(max-width: 700px){
+@media(max-width: 1040px){
   .App>aside{
     position: fixed;
     right: 100%;

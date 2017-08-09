@@ -3,6 +3,8 @@ import './Project.css'
 import todoIMG from './images/todoList.png'
 import fmIMG from './images/musicFM.png'
 import searchIMG from './images/search.png'
+import lightBoardIMG from './images/light-board.png'
+import crawlerIMG from './images/crawler.png'
 
 export default class Project extends Component{
     constructor(props){
@@ -13,48 +15,6 @@ export default class Project extends Component{
         return(
             <div className="Project">
                 <h1 className="title">项目作品</h1>
-                {/* <ul className="projiect-list">
-                    <li>
-                        <h2>基于React的todoList</h2>
-                        <p>可登录账号管理自己的待办事项，可添加事项、标记完成状态、删除已添加的事项等。</p>
-                        <div className="cover">
-                            <a target="_blank" href="https://nicole0320.github.io/react-project-1/build/index.html">预览</a>
-                            <a target="_blank" href="https://github.com/Nicole0320/react-project-1">GitHub</a>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>Music FM</h2>
-                        <p>基于原生HTML5、JS与JQuery的在线音乐电台播放器</p>
-                        <div className="cover">
-                            <a target="_blank" href="https://nicole0320.github.io/Music-FM/index.html">预览</a>
-                            <a target="_blank" href="https://github.com/Nicole0320/Music-FM">GitHub</a>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>基于jQuery图片搜索页面</h2>
-                        <p>可通过输入关键词搜索图片，在当前页面展示搜索结果，向下滚动到底后可加载更多搜索结果</p>
-                        <div className="cover">
-                            <a target="_blank" href="https://nicole0320.github.io/search-image-demo/index">预览</a>
-                            <a target="_blank" href="https://github.com/Nicole0320/search-image-demo">GitHub</a>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>我的个人简历</h2>
-                        <p>基于React的个人简历页面</p>
-                        <div className="cover">
-                            <a target="_blank" href="https://nicole0320.github.io/build/index.html">预览</a>
-                            <a target="_blank" href="https://github.com/Nicole0320/Nicole0320.github.io">GitHub</a>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>原生JS与jQuery实现的常见效果</h2>
-                        <p>常见如轮播、懒加载等页面效果</p>
-                        <div className="cover">
-                            <a target="_blank" href="#">Demo</a>
-                            <a target="_blank" href="#">GitHub</a>
-                        </div>
-                    </li>
-                </ul> */}
                 <ul>
                     <li className="project-list">
                         <h2 className="project-title">TodoList - 单页在线todo应用</h2>
@@ -112,6 +72,46 @@ export default class Project extends Component{
                         <footer>
                             <a target="_blank" href="https://github.com/Nicole0320/search-image-demo">GitHub</a>
                             <a target="_blank" href="https://nicole0320.github.io/search-image-demo/index">Try it</a>
+                        </footer>
+                    </li>
+                    <li className="project-list">
+                        <h2 className="project-title">模拟灯牌效果</h2>
+                        <img src={lightBoardIMG}/>
+                        <p>模拟灯牌这个小应用可以模拟彩色灯牌效果，使用手机浏览器打开预览页，可编辑文字内容，字体会自动调整大小填满屏幕，左右滑动可以切换到背面查看介绍，可根据背面的设置按钮，控制是否打开摇一摇变色和自动变色。通过这个小应用将手边的屏幕变成灯牌，环保又方便！</p>
+                        <p className="tech">
+                            <strong>技术栈：</strong>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>CSS</li>
+                                <li>Ajax</li>
+                            </ul>
+                        </p>
+                        <p className="more">了解更多详情请移步GitHub</p>
+                        <footer>
+                            <a target="_blank" href="https://github.com/Nicole0320/Light-Board">GitHub</a>
+                            <a target="_blank" href="https://nicole0320.github.io/Light-Board/index.html">Try it</a>
+                        </footer>
+                    </li>
+                    <li className="project-list">
+                        <h2 className="project-title">豆瓣房源爬虫</h2>
+                        <img src={crawlerIMG}/>
+                        <p>利用 Node.js 实现爬虫，爬取了豆瓣西安租房小组最新回复的100条帖子的内容，从 HTML 中解析出有用数据，再通过express将数据传到前端，展示在页面上，省去一个一个点开筛选租房信息的时间。后台使用 express 搭建，前端通过Ajax 向后台请求数据。</p>
+                        <p className="tech">
+                            <strong>技术栈：</strong>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>express</li>
+                                <li>superagent</li>
+                                <li>cheerio</li>
+                                <li>async</li>
+                                <li>JQuery</li>
+                                <li>Ajax</li>
+                            </ul>
+                        </p>
+                        <p className="more">了解更多详情请移步GitHub</p>
+                        <footer>
+                            <a target="_blank" href="https://github.com/Nicole0320/douban-group-crawler">GitHub</a>
                         </footer>
                     </li>
                 </ul>
